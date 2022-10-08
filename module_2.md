@@ -2,11 +2,7 @@
 
 ## DB Browser (DBB) e SQL
 
-
-
 ## Criando e Executando Queries do DBB
-
-
 
 ## Questões
 
@@ -17,7 +13,6 @@ Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto d
 * **B |** Existe alguma amostra com concentração faltante em mais de um elemento?
 * **C |** Qual dos elementos possui o maior número de dados nulos (não existentes)?
 * **D |** Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras problemáticaas com dados faltantes?
-* **E |** 
 
 ---
 
@@ -29,7 +24,6 @@ Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto d
 * **6 |** Considerando a [definição de outliers por IQR](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097), quais amostras apresentam outliers? E qual elemento possui o maior número de amostras anômalas?
 * **7 |** Monte uma visão ou tabela nova a nível de amostra, sem amostras problemáticas, com classificação de quadrante e com flags para anomalias de cada elemento?
 * **8 |** Monte uma visão ou tabela mais abstrata, a nível de litotipo & landuse. Quais tipos de informações poderíamos agregar e como?
-
 
 ---
 
