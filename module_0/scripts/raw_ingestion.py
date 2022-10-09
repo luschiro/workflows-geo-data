@@ -9,7 +9,7 @@ from utils import get_directories, connect_db
 
 
 def bad_samples(raw_dataset):
-    df_bad_samples = raw_dataset.loc[[1,2]] \
+    df_bad_samples = raw_dataset.iloc[:,[1,2]] \
                     .sample(frac=0.02, replace= False)
     df_bad_samples[['status']] = 'good'
     
@@ -30,28 +30,20 @@ def main():
 
     # connects to database
     con = connect_db(database_path)
-    
-    # get CSV files
-
-
-    # reads .csv file and generates random bad_samples
-    #df = pd.read_csv(os.path.join(DATA_DIR, 'jura.csv'))
-    #df_bad = bad_samples(df, 'Xloc', 'Yloc')
 
 
 
-    csv_files = glob.glob(os.path.join(DATA_DIR, "*.csv"))
 
     # loop over the list of csv files
+    csv_files = glob.glob(os.path.join(DATA_DIR, "*.csv"))
     for f in csv_files:
-        
-        a = os.path.basename(f).rstrip('.csv')
-        # read the csv file
+        file_name = os.path.basename(f).rstrip('.csv')
         df = pd.read_csv(f)
         df_bad = bad_samples(df)
+        
         # creating tables
-        df.to_sql(str(a), con, if_exists='replace', index=True)
-        df_bad.to_sql(str(a)+'_bad_samples', con, if_exists='replace', index=True)
+        df.to_sql(str(file_name), con, if_exists='replace', index=True)
+        df_bad.to_sql(str(file_name)+'_bad_samples', con, if_exists='replace', index=True)
 
 
 if __name__ == "__main__":
