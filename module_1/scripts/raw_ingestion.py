@@ -9,6 +9,8 @@ from utils import get_directories, connect_db
 
 
 def bad_samples(raw_dataset):
+    # function that takes a dataframe with X and Y and randomly creates a syntetic
+    # table with problematic samples
     df_bad_samples = raw_dataset.iloc[:,[1,2]] \
                     .sample(frac=0.02, replace= False)
     df_bad_samples[['status']] = 'good'
@@ -31,12 +33,11 @@ def main():
     # connects to database
     con = connect_db(database_path)
 
-
-
-
     # loop over the list of csv files
     csv_files = glob.glob(os.path.join(DATA_DIR, "*.csv"))
     for f in csv_files:
+
+        # getting file names and creating dataframes
         file_name = os.path.basename(f).rstrip('.csv')
         df = pd.read_csv(f)
         df_bad = bad_samples(df)

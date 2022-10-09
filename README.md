@@ -32,7 +32,7 @@ Serão utilizados os seguintes:
 
 ## Módulos
 
-* **Módulo 1 | Setup**
+* **Módulo 0 | Setup**
   * introdução ao conteúdo
   * objetivos
   * ambiente de desenvolvimento e stack
@@ -44,14 +44,14 @@ Serão utilizados os seguintes:
     * jura
     * lake_walker
 
-* **Módulo 2 | Carregando dados em uma Database**
+* **Módulo 1 | Ingestão de dados em database**
   * SQlite3
   * criação de funções de utilidades
   * script de criação de database
   * script de criação tabelas
   * ingestão de dados "raw"
 
-* **Módulo 3 | Qualidade de Dados e Validação Inical**
+* **Módulo 2 | Qualidade de Dados e Validação Inical**
  
   * contagens
     * dados únicos, duplicidade
