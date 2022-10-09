@@ -11,17 +11,16 @@ Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto d
 * **A |** Quantos pontos foram amostrados?
 * **A |** Quantas amostras não possuem teor de Cr? Quantas não possuem Cr ou Zn*/
 * **B |** Quantos pontos foram amostrados de cada `litotipo`?
-* **F |** Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras com dados faltantes?
+* **F |** Qual a combinação de `landuse` e `litotipo` que possui mais amostras?
 * **C |** Existe algum ponto de amostragem repetido (mesma localização)?
 * **D |** Qual o número de amostras com concentração faltante de algum elemento?
 * **E |** Existe alguma amostra com teor faltante em mais de um elemento?
-
 * **G |** Qual dos elementos possui o maior número de dados nulos?
 
 ---
 
-* **1 |** Quais os maiores teores de cada elemento nas amostras problemáticas?
 * **2 |** Na tabela jura_bad_samples existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
+* **1 |** Quais os maiores teores de cada elemento nas amostras problemáticas?
 * **3 |** Quantas amostras do dataset estão acima desses teores, individualmente? E acima de todos?
   * por exemplo, existem X amostras com teores de Zn acima do maior teor de Zn nas amostras problemáticas; e Y amostras com todos os teores acima dos maiores teores das amostras
 * **4 |** Em qual `landuse` ocorre o maior teor médio de Cu?
