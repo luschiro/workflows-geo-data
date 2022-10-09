@@ -3,6 +3,19 @@ select
     count(*) as qtPoints 
 from jura;
 
+
+/** **B |** Quais os tipos distintos de Landuse?*/
+select
+    distinct Landuse
+from jura;
+
+/** **A| ** Quantas amostras possuem teor de Cobalto maior ou igual a 10? */
+select
+    count(*)
+from jura
+where cobalt >= 10;
+
+
 /** **A| ** Quantas amostras não possuem teor de Cr? Quantas não possuem Cr ou Zn*/
 select 
     * 
@@ -15,12 +28,28 @@ select
 from jura 
 where Cr is null or Zn is null;
 
-/** **A| ** Quantas amostras foram coletadas em Floresta e não possuem teor faltante de cadmium?*/
+
+/** **A| ** Quantas amostras foram coletadas em florestas e não possuem teor cadmium?*/
 select 
     *
 from jura 
 where Landuse = 'Floresta' and cadmium is null;
 
+
+/** **C |** Crie uma coluna que caso Landuse seja Floresta, o campo é preenchido com 'forest'. 
+Caso seja outro Campo, 'field'. Qualquer outro, preencha com 'outro' */
+select 
+    Xloc,
+    Yloc,
+    Landuse,
+    CASE
+        WHEN Landuse = 'Floresta' THEN 'forest'
+        WHEN Landuse = 'Campo' THEN 'field'
+    ELSE 'outro' END AS trad_landuse
+from jura
+--where Landuse = 'Floresta'
+limit 10
+;
 
 /** **B |** Quantos pontos foram amostrados de cada `litotipo`?*/
 select
@@ -48,13 +77,8 @@ select
     count(*) as repeticoes 
 from jura
 group by 1, 2
-order by repeticoes desc
+having repeticoes > 1
 ;
 
 
 
-
-/** **E |** Existe alguma amostra com teor faltante em mais de um elemento?*/
-SELECT
-    *,
-    SUM (CASE WHEN cobalt is null then 1 else 0 end) as flnull,
