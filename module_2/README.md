@@ -2,18 +2,19 @@
 
 ## A | Introdução
 
-Com nossos dados "raw" permanecidos em uma database, vamos começar nossas análises. Uma vez em uma database SQlite, existem diversas maneiras que acessarmos os dados. Pelo terminal, pelo VsCode out até por alguma ferramenta externa, como o DB Browser.
-
-Essa é uma ferramenta bem útil e simples, onde poderemos facilmente validar nossas análises e conferir nossos workflows.
+Com nossos dados "raw" permanecidos em uma database, vamos começar nossas análises. Uma vez em uma database SQlite, existem diversas maneiras que acessarmos os dados. Pelo terminal, pelo VSCode out até por alguma ferramenta externa, como o DB Browser: ferramenta bem útil e simples, onde poderemos facilmente validar nossas análises e conferir nossos workflows.
 
 ## B | DB Browser (DBB) e SQL
+
+O DB Browser é uma ferrmante visual e de alta qualidade para administração de databases SQlite. Segundo o [site oficial](https://sqlitebrowser.org/):
+
+>DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite. DB4S is for users and developers who want to create, search, and edit databases.
 
 SQL (structured query language) é uma linguagem de consulta antiga (e não de programação..), mas muito útil e bastante usada no meio dos dados.
 
 Geralmente, em operações do dia a dia, conseguimos utilizar ferramentas de planilha (excel, sheets) para resolvermos nossos problemas. Quando existe um volume muito grande dados, utilizar tais ferramentas pode ser um pouco complicado.
 
 Deste modo, vamos realizar algumas análises utilizando SQL, simulando um contexto fora das ferramentas de planilha. Para praticar, iremos resolver algumas questões..
-
 
 ## C | Questões
 
@@ -48,11 +49,3 @@ São elas:
 
 * **11 |** Monte uma visão ou tabela nova a nível de amostra, sem dados faltantes, com classificação de quadrante, com flags para anomalias de cada elemento e com status de amostra problemática?
 * **12 |** Monte uma visão ou tabela mais abstrata, a nível de litotipo & landuse. Quais tipos de informações poderíamos agregar?
-
----
-
-* SQlite3
-* contagens
-* dados únicos, duplicidade
-* filtros, agrupamentos e joins
-* estatística básica
