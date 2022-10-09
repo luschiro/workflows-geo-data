@@ -1,15 +1,28 @@
-# Módulo 2 | Qualidade de Dados e Validação Inical
+# Módulo 2 | Qualidade de dados e validação inical
 
-## DB Browser (DBB) e SQL
+## A | Introdução
 
-## Criando e Executando Queries do DBB
+Com nossos dados "raw" permanecidos em uma database, vamos começar nossas análises. Uma vez em uma database SQlite, existem diversas maneiras que acessarmos os dados. Pelo terminal, pelo VsCode out até por alguma ferramenta externa, como o DB Browser.
 
-## Questões
+Essa é uma ferramenta bem útil e simples, onde poderemos facilmente validar nossas análises e conferir nossos workflows.
 
-Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto de qualidade e validação de dados (A-X), como em análises voltadas à geologia (1-X). São elas:
+## B | DB Browser (DBB) e SQL
+
+SQL (structured query language) é uma linguagem de consulta antiga (e não de programação..), mas muito útil e bastante usada no meio dos dados.
+
+Geralmente, em operações do dia a dia, conseguimos utilizar ferramentas de planilha (excel, sheets) para resolvermos nossos problemas. Quando existe um volume muito grande dados, utilizar tais ferramentas pode ser um pouco complicado.
+
+Deste modo, vamos realizar algumas análises utilizando SQL, simulando um contexto fora das ferramentas de planilha. Para praticar, iremos resolver algumas questões..
+
+
+## C | Questões
+
+Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto de qualidade e validação de dados (A-X), como já em análises voltadas aos problemas geológicos/geoestatísticos que iremos resolver (1-X). 
+
+São elas:
 
 * **A |** Quantos pontos foram amostrados?
-* **A |** Quantas amostras não possuem teor de Cr? Quantas não possuem Cr ou Zn*/
+* **A |** Quantas amostras não possuem dados sobre teor de Cr? Quantas não possuem Cr ou Zn*/
 * **B |** Quantos pontos foram amostrados de cada `litotipo`?
 * **F |** Qual a combinação de `landuse` e `litotipo` que possui mais amostras?
 * **C |** Existe algum ponto de amostragem repetido (mesma localização)?
