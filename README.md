@@ -18,7 +18,7 @@ A linguagem de pregramação principal que será usada no curso, nos ajudará co
 
 ## C | Estudo de Caso e Datasets
 
-Serão utilizados os seguintes:
+Serão utilizados os seguintes datasets:
 
 * introdução, EDA, dataviz, krigagem
   * **Jura**: dataset retirado do [livro de Pierre Goovaerts](https://books.google.com.br/books/about/Geostatistics_for_Natural_Resources_Eval.html?id=CW-7tHAaVR0C&redir_esc=y);
@@ -45,10 +45,9 @@ Serão utilizados os seguintes:
   * criação de funções de utilidades
   * script de criação de database
   * script de criação tabelas
-  * ingestão de dados "raw"
+  * ingestão de dados em camada "raw"
 
 * **Módulo 2 | Qualidade de Dados e Validação Inical**
- 
   * contagens
     * dados únicos, duplicidade
   * filtros, agrupamentos e joins

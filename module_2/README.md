@@ -6,7 +6,7 @@ Com nossos dados "raw" permanecidos em uma database, vamos começar nossas anál
 
 ## B | DB Browser (DBB) e SQL
 
-O DB Browser é uma ferrmante visual e de alta qualidade para administração de databases SQlite. Segundo o [site oficial](https://sqlitebrowser.org/):
+O DB Browser é uma ferrmanta visual e de alta qualidade para administração de databases SQlite. Segundo o [site oficial](https://sqlitebrowser.org/):
 
 >DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite. DB4S is for users and developers who want to create, search, and edit databases.
 
