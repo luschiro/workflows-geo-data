@@ -18,7 +18,7 @@ Deste modo, vamos realizar algumas análises utilizando SQL, simulando um contex
 
 ## C | Questões
 
-Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto de qualidade e validação de dados (A-X), como já em análises voltadas aos problemas geológicos/geoestatísticos que iremos resolver (1-X). 
+Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto de qualidade e validação de dados (A-X), como já em análises voltadas aos problemas geológicos/geoestatísticos que iremos resolver (1-X).
 
 São elas:
 

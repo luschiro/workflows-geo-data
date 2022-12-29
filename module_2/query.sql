@@ -13,7 +13,7 @@ from jura;
 select
     count(*)
 from jura
-where cobalt >= 10;
+where cobalt >= 10; 
 
 
 /** **A| ** Quantas amostras não possuem teor de Cr? Quantas não possuem Cr ou Zn*/

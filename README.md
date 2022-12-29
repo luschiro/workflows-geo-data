@@ -29,24 +29,22 @@ Serão utilizados os seguintes datasets:
 ## D | Módulos
 
 * **Módulo 0 | Setup**
-  * introdução ao conteúdo
   * objetivos
   * ambiente de desenvolvimento e stack
-    * VS Code
-    * conda
-    * requirements
-  * git/github
+    * [VS Code](https://code.visualstudio.com/)
+    * [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+    * [github](https://github.com/)
   * sobre os datasets
     * jura
     * lake_walker
 
 * **Módulo 1 | Ingestão de dados em database**
-  * SQlite3
+  * [SQLite](https://www.sqlite.org/index.html)
   * criação de funções de utilidades
   * script de criação de database
   * script de criação tabelas
-  * ingestão de dados em camada "raw"
-
+  * ingestão de dados em camada
+  
 * **Módulo 2 | Qualidade de Dados e Validação Inical**
   * contagens
     * dados únicos, duplicidade
@@ -54,12 +52,13 @@ Serão utilizados os seguintes datasets:
   * estatística básica
 
 * **Módulo 4 | Análise Exploratória de Dados com Python**
-  * tabelas em Python: Pandas e dataframes
-  * dataviz: matplotlib e seaborn
+  * notebooks Jupyter
+  * **python**: Pandas e dataframes
+  * **dataviz**: matplotlib e seaborn
   * automatizando criação de gráficos
 
 ## E | Recursos e Ferramentas
 
 * [AI_GEOSTATS](https://wiki.52north.org/AI_GEOSTATS/WebHome)
-
-## F | Referências Bibliográficas
+* [geostatsguy](https://github.com/GeostatsGuy)
+* [Stanford Geostatistical Modeling Software - SGeMS](https://sgems.sourceforge.net/)
