@@ -2,21 +2,21 @@
 
 ## A | Introdução
 
-Este conteúdo é voltado a estudantes e profissionais com interesse em aplicações de geoestatística, partindo de uma perspectiva de análise de dados, programação, automação de processos e exploração de banco de dados.
+Este conteúdo é voltado a estudantes e profissionais com interesse em aplicações de geoestatística, partindo de uma perspectiva de análise de dados.
 
 ## B | Metodologia
 
-Serão realizados workflows com o objetivo de responder a **perguntas-chave** de diversos problemas geológicos geospaciais aplicados à mineração, hidrogeologia e gestão de áreas contaminadas envolvendo conceitos de geoprocessamento e geoestatística.
+Serão realizados workflows com o objetivo de responder a **perguntas-chave** de diversos problemas geológicos e geospaciais aplicados à mineração, hidrogeologia e gestão de áreas contaminadas.
 
 ### B.1 | Banco de Dados e SQL
 
-Iremos montar um banco de dados simples, simulando uma aplicação. A partir de dela, iremos analisar os dados com queries SQL para responder perguntas iniciais e gerar visualizações mais abstratas.
+Iremos montar um banco de dados simples, simulando uma aplicação. A partir dele, iremos analisar os dados com queries SQL para responder perguntas iniciais e gerar visualizações mais abstratas.
 
 ### B.2 | Python
 
-A linguagem de pregramação principal que será usada no curso, nos ajudará com a orquestração das nossas queries, gestão do banco de dados, análise exploratória, visualização de dados e criação de modelos.
+A linguagem de pregramação principal que será usada no curso, nos ajudará com a orquestração das nossas queries, gestão do banco de dados, análise exploratória e visualização de dados e criação de modelos.
 
-## C | Estudo de Caso e Datasets
+## C | Datasets
 
 Serão utilizados os seguintes datasets:
 
@@ -28,7 +28,7 @@ Serão utilizados os seguintes datasets:
 
 ## D | Módulos
 
-* **Módulo 0 | Setup**
+* **Módulo 0 | Introdução e Setup**
   * objetivos
   * ambiente de desenvolvimento e stack
     * [VS Code](https://code.visualstudio.com/)
@@ -40,7 +40,7 @@ Serão utilizados os seguintes datasets:
 
 * **Módulo 1 | Ingestão de dados em database**
   * [SQLite](https://www.sqlite.org/index.html)
-  * criação de funções de utilidades
+  * criação de funções auxiliares
   * script de criação de database
   * script de criação tabelas
   * ingestão de dados em camada
@@ -62,3 +62,4 @@ Serão utilizados os seguintes datasets:
 * [AI_GEOSTATS](https://wiki.52north.org/AI_GEOSTATS/WebHome)
 * [geostatsguy](https://github.com/GeostatsGuy)
 * [Stanford Geostatistical Modeling Software - SGeMS](https://sgems.sourceforge.net/)
+* [GeoStats.jl](https://github.com/JuliaEarth/GeoStats.j)
