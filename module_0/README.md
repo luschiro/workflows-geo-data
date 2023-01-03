@@ -1,6 +1,6 @@
 # Módulo 0 | Introdução e Setup
 
-## Datasets
+## Sobre os Datasets
 
 Serão utilizados os seguintes datasets:
 
