@@ -1,6 +1,6 @@
 # Workflows de Geoestatística e Análise de Dados Geoespaciais
 
-## A | Introduçã
+## A | Introdução
 
 Este conteúdo é voltado a estudantes e profissionais com interesse em aplicações de geoestatística, partindo de uma perspectiva de análise de dados.
 
