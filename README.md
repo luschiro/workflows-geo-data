@@ -33,7 +33,7 @@ Serão realizados workflows para resolução de **problemas geológicos, geoesta
   * pandas, scipy, numpy e seaborn
   * automatizando criação de gráficos
 
-## E | Recursos e Ferramentas
+## Recursos e Ferramentas
 
 * Python
   * [Site oficial](https://www.python.org/)
