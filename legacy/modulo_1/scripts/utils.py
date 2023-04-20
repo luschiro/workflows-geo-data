@@ -1,6 +1,6 @@
 import os
-from sqlalchemy import create_engine
-from sqlalchemy_utils import database_exists, create_database
+#from sqlalchemy import create_engine
+from sqlalchemy_utils import database_exists, create_database, create_engine
 
 def get_directories():
     # getting working paths

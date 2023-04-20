@@ -1,5 +1,14 @@
 # Módulo 0 | Introdução e Setup
 
+## Apresentação e Objetivos
+
+## Ambiente de Desenvolvimeto e Stack
+  
+* [VS Code](https://code.visualstudio.com/) - editor de código
+* [miniconda](https://docs.conda.io/en/latest/miniconda.html) - organizador de ambientes virtuais
+* [github](https://github.com/) - repositórios remotos para colaboração
+* [DB Browser for SQLite](https://sqlitebrowser.org/) - gerenciador de databases SQLite
+
 ## Sobre os Datasets
 
 Serão utilizados os seguintes datasets:
@@ -10,8 +19,8 @@ Serão utilizados os seguintes datasets:
   
 > The jura data set from Pierre Goovaerts' book (see references below). It contains four data.frames: prediction.dat, validation.dat and transect.dat and juragrid.dat, and three data.frames with consistently coded land use and rock type factors, as well as geographic coordinates. The examples below show how to transform these into spatial (sp) objects in a local coordinate system and in geographic coordinates, and how to transform to metric coordinate reference systems.
 
-## Ambiente de Desenvolvimeto e Stack
-  
-* [VS Code](https://code.visualstudio.com/) - editor de código
-* [miniconda](https://docs.conda.io/en/latest/miniconda.html) - organizador de ambientes virtuais
-* [github](https://github.com/) - repositórios remotos para colaboração
+## Criando um banco de dados SQLite no DB Browser
+
+### Tabelas
+
+### Editor SQL
