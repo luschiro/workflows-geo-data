@@ -1,4 +1,4 @@
-# Módulo 2 | Qualidade de dados e validação inical
+# Módulo 1 | Qualidade de dados e validação inical
 
 ## Introdução
 
@@ -34,8 +34,8 @@ Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto d
   * **G |** Existe alguma amostra com teor faltante em mais de um elemento?
   * **H |** Qual dos elementos possui o maior número de dados nulos?
 
-
 ---
+
 * **Sobre os Teores**
   * **1 |** Na tabela jura_bad_samples existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
   * **2 |** Quais os maiores teores de cada elemento nas amostras problemáticas?
