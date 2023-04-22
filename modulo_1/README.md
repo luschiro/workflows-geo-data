@@ -24,7 +24,7 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
 
 ---
 
-* **Qualidade de Dados**
+* **Qualidade de Dados - `quality.sql`**
   * Quantos pontos foram amostrados?
   * Quais os tipos distintos de uso de terra - `landuse` e litotipo - `Rock`?
   * Quantas amostras foram coletadas em floresta?
@@ -44,7 +44,7 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
 
 ---
 
-* **Sobre os Teores**
+* **Sobre os Teores - `teores.sql`**
   * Na tabela `jura_bad_samples` existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
   * Quais os maiores teores de cada elemento nas amostras problemáticas?
   * Quantas amostras do dataset estão acima desses teores, individualmente? E acima de todos?
@@ -61,12 +61,12 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
 ---
 
 * **Novas Tabelas**
-  * **I |** Monte uma visão ou tabela nova a nível de amostra:
+  * **Tabela I -  `new_table_I.sql`** Monte uma visão ou tabela nova a nível de amostra:
     * sem dados faltantes;
     * nomes de colunas padronizados;
     * com classificação de quadrante;
     * com flags para anomalias de cada elemento;
     * com status de amostra problemática
   
-  * **II |** Monte uma visão ou tabela mais abstrata, a nível de litotipo & landuse.
+  * **Tabela II -  `new_table_II.sql`** Monte uma visão ou tabela mais abstrata, a nível de litotipo & landuse.
     * Quais tipos de informações poderíamos agregar?
