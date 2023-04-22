@@ -41,9 +41,6 @@ where Cr is null or Zn is null;
 
 
 
-
-
-
 -- Quantos pontos foram amostrados de cada litotipo?
 select
   Rock as litotipo,
