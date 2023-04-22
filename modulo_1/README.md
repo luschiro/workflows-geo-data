@@ -25,26 +25,29 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
 ---
 
 * **Qualidade de Dados - `quality.sql`**
-  * Quantos pontos foram amostrados?
-  * Quais os tipos distintos de uso de terra - `landuse` e litotipo - `Rock`?
-  * Quantas amostras foram coletadas em floresta?
-  * Quantas amostras são do Argoviano e possuem teor de Zn > 50?
-    * caso esse seja um teor de corte fictício, classifique as amostras com base neste critério
-  * Quantas amostras não possuem dados de teor de Cr?
+  * **Filtros e Contagens**
+    * Quantos pontos foram amostrados?
+    * Quais os tipos distintos de uso de terra - landuse e litotipo - Rock?
+    * Quantas amostras foram coletadas em floresta?
+    * Quantas amostras são do Argoviano e possuem teor de Zn > 50?
+      * caso esse seja um teor de corte fictício, classifique as amostras com base neste critério
+    * Quantas amostras não possuem dados de teor de Cr?
     * Quantas não possuem teores de Cr ou de Zn?
-
-  * Quantas registros existem de cada `litotipo`?
-  * Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras coletadas?
-    * crie um rank com as 5 principais combinações
-  * Existe algum ponto de amostragem repetido, mesma localização?
-
-  * Qual o número de amostras com alguma concentração faltante?
-  * Existe alguma amostra com teor faltante em mais de um elemento?
-  * Qual dos elementos possui o maior número de amostras de dados nulos?
+  * **Agrupamentos**
+    * Quantas registros existem de cada `litotipo`?
+    * Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras coletadas?
+      * crie um rank com as 5 principais combinações
+      * filtre as combinações para aquelas com mais de 40 pontos amostrados
+    * Existe algum ponto de amostragem repetido, mesma localização?
+  * **With**
+    * Existe alguma amostra com teor faltante em todos os elementos?
+    * Entre cádmio, cobalto e cromio, qual o elemento com o maior número de amostras sem teor?
+      * em termos %, o quanto essas amostras representam do total de amostras?
 
 ---
 
 * **Sobre os Teores - `teores.sql`**
+  * Para cada litotipo, quais os maiores, menores teores de Zn? Qual o teor médio de Cr?
   * Na tabela `jura_bad_samples` existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
   * Quais os maiores teores de cada elemento nas amostras problemáticas?
   * Quantas amostras do dataset estão acima desses teores, individualmente? E acima de todos?
