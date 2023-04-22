@@ -54,7 +54,8 @@ from jura
 where Cr is null or Zn is null
 ;
 
-/* AGRUPAMENTO
+/* 
+AGRUPAMENTO
     * Quantas registros existem de cada litotipo?
 	* Qual a combinação de landuse e litotipo que apresenta mais amostras coletadas?
 	  * crie um rank com as 5 principais combinações
@@ -102,6 +103,7 @@ limit 5
 
 
 /*
+WITH
 	* Existe alguma amostra com teor faltante em todos os elementos?
 	* Entre cádmio, cobalto e cromio, qual o elemento com o maior número de amostras de sem teor? 
 		* Em termos %, o quanto essas amostras representam do total de amostras?
