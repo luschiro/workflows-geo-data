@@ -2,8 +2,8 @@
 
 ## Track
 
-- [x] `quality.sql`
-- [ ] to do
+* [x] `quality.sql`
+* [ ] to do
 
 ## Introdução
 
