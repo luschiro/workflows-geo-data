@@ -25,32 +25,48 @@ Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto d
 ---
 
 * **Qualidade de Dados**
-  * **A |** Quantos pontos foram amostrados?
-  * **B |** Quantas amostras não possuem dados sobre teor de Cr? Quantas não possuem Cr ou Zn*/
-  * **C |** Quantos pontos foram amostrados de cada `litotipo`?
-  * **D |** Qual a combinação de `landuse` e `litotipo` que possui mais amostras?
-  * **E |** Existe algum ponto de amostragem repetido (mesma localização)?
-  * **F |** Qual o número de amostras com concentração faltante de algum elemento?
-  * **G |** Existe alguma amostra com teor faltante em mais de um elemento?
-  * **H |** Qual dos elementos possui o maior número de dados nulos?
+  * Quantos pontos foram amostrados?
+  * Quais os tipos distintos de uso de terra (`landuse`)?
+  * Quantas amostras foram coletadas em floresta?
+  * Quantas amostras são do Argoviano e possuem teor de Zn > 50?
+    * caso esse seja um core fictício, classifique as amostras com base neste critério
+  * Quantas amostras não possuem dados de teor de Cr?
+    * Quantas não possuem teores de Cr ou de Zn?
+
+  * Quantas registros existem de cada `litotipo`?
+  * Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras coletadas?
+    * crie um rank com as 5 principais combinações
+  
+  * Existe algum ponto de amostragem repetido, mesma localização?
+  * Qual o número de amostras com alguma concentração faltante?
+  * Existe alguma amostra com teor faltante em mais de um elemento?
+  * Qual dos elementos possui o maior número de amostras de dados nulos?
 
 ---
 
 * **Sobre os Teores**
-  * **1 |** Na tabela jura_bad_samples existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
-  * **2 |** Quais os maiores teores de cada elemento nas amostras problemáticas?
-  * **3 |** Quantas amostras do dataset estão acima desses teores, individualmente? E acima de todos?
-  * por exemplo, existem X amostras com teores de Zn acima do maior teor de Zn nas amostras problemáticas; e Y amostras com todos os teores acima dos maiores teores das amostras
-  * **4 |** Em qual `landuse` ocorre o maior teor médio de Cu?
-  * **5 |** Quais são as 5 amostras do `Argoviano` com maiores teores de Zn?
-  * **6 |** Quais seriam os vértices de nossa área caso fossemos delimitá-la em um retângulo?
-  * **7 |** Caso limitássemos nossa área em um retângulo, quais seriam as coordenadas?
-  * **8 |** Considerando os quadrantes desse retângulo,qual deles teria a maior concentração média de Cr? E de Cd?
-  * **9 |** Qual o teor médio de Cr das amostras que possuem teor acima do limite Q3?
-  * **10 |** Considerando a [definição de outliers por IQR](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097), quais amostras apresentam outliers? E qual elemento possui o maior número de amostras anômalas?
+  * Na tabela `jura_bad_samples` existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
+  * Quais os maiores teores de cada elemento nas amostras problemáticas?
+  * Quantas amostras do dataset estão acima desses teores, individualmente? E acima de todos?
+    * por exemplo, existem X amostras com teores de Zn acima do teor máximo de Zn nas amostras problemáticas; e Y amostras com todos os teores acima dos maiores teores das amostras
+  * Em qual `landuse` ocorre o maior teor médio de Cu?
+  * Quais são as 5 amostras do `Argoviano` com maiores teores de Zn?
+
+  * Quais seriam os vértices de nossa área caso fossemos delimitá-la em um retângulo?
+  * Caso limitássemos nossa área em um retângulo, quais seriam as coordenadas?
+  * Considerando os quadrantes desse retângulo,qual deles teria a maior concentração média de Cr? E de Cd?
+  * Qual o teor médio de Cr das amostras que possuem teor acima do limite Q3?
+  * Considerando a [definição de outliers por IQR](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097), quais amostras apresentam outliers? E qual elemento possui o maior número de amostras anômalas?
 
 ---
 
 * **Novas Tabelas**
-  * **I |** Monte uma visão ou tabela nova a nível de amostra, sem dados faltantes, com classificação de quadrante, com flags para anomalias de cada elemento e com status de amostra problemática?
-  * **II |** Monte uma visão ou tabela mais abstrata, a nível de litotipo & landuse. Quais tipos de informações poderíamos agregar?
+  * **I |** Monte uma visão ou tabela nova a nível de amostra:
+    * sem dados faltantes;
+    * nomes de colunas padronizados;
+    * com classificação de quadrante;
+    * com flags para anomalias de cada elemento;
+    * com status de amostra problemática
+  
+  * **II |** Monte uma visão ou tabela mais abstrata, a nível de litotipo & landuse.
+    * Quais tipos de informações poderíamos agregar?

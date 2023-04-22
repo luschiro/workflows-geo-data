@@ -1,39 +1,66 @@
-/** **A |** Quantos pontos foram amostrados?*/
+/*
+A | Quantos pontos foram amostrados?
+B | Quantas amostras não possuem dados sobre teor de Cr? Quantas não possuem Cr ou Zn?
+C | Quantos pontos foram amostrados de cada litotipo?
+D | Qual a combinação de landuse e litotipo que possui mais amostras?
+E | Existe algum ponto de amostragem repetido (mesma localização)?
+F | Qual o número de amostras com concentração faltante de algum elemento?
+G | Existe alguma amostra com teor faltante em mais de um elemento?
+H | Qual dos elementos possui o maior número de dados nulos?
+*/
+
+
+-- Quantos pontos foram amostrados?
 select 
     count(*) as qtPoints 
 from jura;
 
-
-/** **B |** Quais os tipos distintos de Landuse?*/
+-- Quais os tipos distintos de uso de terra (`landuse`)?
 select
     distinct Landuse
 from jura;
 
-/** **A| ** Quantas amostras possuem teor de Cobalto maior ou igual a 10? */
-select
-    count(*)
-from jura
-where cobalt >= 10; 
 
+-- Quantas amostras forma coletadas em floresta?
+select 
+    *
+from jura 
+where Landuse = 'Floresta'
 
-/** **A| ** Quantas amostras não possuem teor de Cr? Quantas não possuem Cr ou Zn*/
+-- Quantas amostras não possuem dados sobre teor de Cr?
 select 
     * 
 from jura 
 where Cr is null;
 
-
+-- * Quantas não possuem teores de Cr ou de Zn?
 select 
     *
 from jura 
 where Cr is null or Zn is null;
 
 
+
+
+
+
+-- Quantos pontos foram amostrados de cada litotipo?
+select
+  Rock as litotipo,
+  count(*) as qtPontos
+from jura
+group by 1
+order by 2 desc
+;
+
+
+
 /** **A| ** Quantas amostras foram coletadas em florestas e não possuem teor cadmium?*/
 select 
     *
 from jura 
-where Landuse = 'Floresta' and cadmium is null;
+where Landuse = 'Floresta' 
+      and cadmium is null;
 
 
 /** **C |** Crie uma coluna que caso Landuse seja Floresta, o campo é preenchido com 'forest'. 
@@ -59,7 +86,7 @@ from jura
 group by Rock;
 
 
-/** **F |** Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras coletadas?*/
+-- D
 select 
     Landuse,
     Rock,
@@ -70,7 +97,7 @@ order by qtPontos desc
 ;
 
 
-/** **C |** Existe algum ponto de amostragem repetido (mesma localização)?*/
+-- E
 select 
     Xloc,
     Yloc,
