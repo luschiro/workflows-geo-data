@@ -18,26 +18,26 @@ O DB Browser é uma ferrmanta visual e de alta qualidade para administração de
 
 >DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite. DB4S is for users and developers who want to create, search, and edit databases.
 
-## Questões
+## Exercícios
 
-Algumas perguntas guia para colocarmos em prática o SQL, tanto em um contexto de qualidade e validação de dados (A-X), como já em análises voltadas aos problemas geológicos/geoestatísticos que iremos resolver (1-X).
+Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dados (A-X), como já em um contexto de análise de teores mais específicas.
 
 ---
 
 * **Qualidade de Dados**
   * Quantos pontos foram amostrados?
-  * Quais os tipos distintos de uso de terra (`landuse`)?
+  * Quais os tipos distintos de uso de terra - `landuse` e litotipo - `Rock`?
   * Quantas amostras foram coletadas em floresta?
   * Quantas amostras são do Argoviano e possuem teor de Zn > 50?
-    * caso esse seja um core fictício, classifique as amostras com base neste critério
+    * caso esse seja um teor de corte fictício, classifique as amostras com base neste critério
   * Quantas amostras não possuem dados de teor de Cr?
     * Quantas não possuem teores de Cr ou de Zn?
 
   * Quantas registros existem de cada `litotipo`?
   * Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras coletadas?
     * crie um rank com as 5 principais combinações
-  
   * Existe algum ponto de amostragem repetido, mesma localização?
+
   * Qual o número de amostras com alguma concentração faltante?
   * Existe alguma amostra com teor faltante em mais de um elemento?
   * Qual dos elementos possui o maior número de amostras de dados nulos?
