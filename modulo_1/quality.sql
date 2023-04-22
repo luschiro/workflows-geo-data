@@ -10,38 +10,38 @@ FILTROS e CONTAGENS
 */
 
 select
-	*
+    *
 from jura
 ;
 
 select
-	count(*)
+    count(*)
 from jura
 ;
 
 select
-	--distinct(Landuse)
+    --distinct(Landuse)
 	distinct(Rock)
 from jura
 ;
 
 select
-	count(*)
+    count(*)
 from jura
 where Landuse = "Floresta"
 ;
 
 select
-	*
+    *
 from jura
 where Rock = "Argoviano" and Zn > 50
 order by Zn desc
 ;
 
 select
-	*,
-	case 
-		when Zn > 50 then 1 else 0
+    *,
+    case 
+	    when Zn > 50 then 1 else 0
 	end as flCorteZn
 from jura
 where Rock = "Argoviano" --and Zn > 50
@@ -55,7 +55,7 @@ where Cr is null or Zn is null
 ;
 
 /* AGRUPAMENTO
-	* Quantas registros existem de cada litotipo?
+    * Quantas registros existem de cada litotipo?
 	* Qual a combinação de landuse e litotipo que apresenta mais amostras coletadas?
 	  * crie um rank com as 5 principais combinações
 	  * filtre as combinações para aquelas com mais de 40 pontos amostrados
@@ -63,7 +63,7 @@ where Cr is null or Zn is null
 */
 
 select
-	Rock as litotipoe,
+    Rock as litotipoe,
 	count(*) as qtPontons
 from jura
 group by Rock
@@ -107,11 +107,11 @@ limit 5
 		* Em termos %, o quanto essas amostras representam do total de amostras?
  */
  
- with t as (
-  select
-    *,
-    coalesce(cadmium, cobalt, Cr, Cu, nickel, Pb, Zn) as dado
-  from jura
+with t as (
+    select
+        *,
+        coalesce(cadmium, cobalt, Cr, Cu, nickel, Pb, Zn) as dado
+    from jura
 )
 select 
 	* 
@@ -121,14 +121,13 @@ where dado is not null
 
 
 with t as (
-  select
-    *,
-    case when cadmium is null then 1 else 0 end as flCadmium,
-    case when cobalt is null then 1 else 0 end as flCobalt,
-    case when Cr is null then 1 else 0 end as flCr
-from jura
+    select
+        *,
+        case when cadmium is null then 1 else 0 end as flCadmium,
+        case when cobalt is null then 1 else 0 end as flCobalt,
+        case when Cr is null then 1 else 0 end as flCr
+    from jura
 )
-
 select	
   sum(flCadmium) as sumCadmium,
   avg(flCadmium) as avgCadmium,
