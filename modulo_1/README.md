@@ -1,5 +1,10 @@
 # Módulo 1 | Qualidade de dados e validação inical
 
+## Track
+
+- [x] `quality.sql`
+- [ ] to do
+
 ## Introdução
 
 Com nossos dados "raw" permanecidos em uma database, vamos começar nossas análises. Uma vez em uma database SQlite, pode utilizar o DB Browser, uma ferramenta simples e bem útil, onde poderemos validar dados, análises e conferir o resultado de nossas queries.
