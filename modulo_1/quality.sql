@@ -139,3 +139,99 @@ select
   avg(flCr) as avgCr
 from t
 ;
+
+/*Join
+* Na tabela jura_bad_samples existem amostras que não são confiáveis. Quais os litotipos dessas amostras?
+* Quais os maiores teores de Cr e Zn nas amostras problemáticas?
+* Quantas amostras do dataset estão acima desses teores?
+	* por exemplo, existem X amostras com teores de Zn acima do teor máximo de Zn nas amostras problemáticas
+* Monte uma tabela com todos os dados da tabela original e uma coluna adicional de status.
+* * Desafio: caso as coordernadas das 4 amostras problemáticos do Quaternario e Kimmerridgiano sejam as extremidades de uma área problemática, 
+quantas amostras estariam dentro destes limites?
+*/
+
+-- lito
+select
+	t1.*,
+	t2.Rock
+from jura_bad as t1
+left join jura as t2
+	on t1.Xloc = t2.Xloc
+	and t1.YLoc = t2.Yloc
+;
+
+
+-- maiores teores
+with bad_samples as (
+	select
+		*
+	from jura_bad as t1
+	left join jura as t2
+		on t1.Xloc = t2.Xloc
+		and t1.YLoc = t2.Yloc
+)
+
+select
+	"problematic_samples" as description,
+	max(Cr) as maxCr,
+	max(Zn) as maxZn
+from bad_samples
+;
+
+-- corte
+with bad_samples as (
+	select
+		*
+	from jura_bad as t1
+	left join jura as t2
+		on t1.Xloc = t2.Xloc
+		and t1.YLoc = t2.Yloc
+),
+cortes as (
+	select
+		"problematic_samples" as description,
+		max(Cr) as maxCr,
+		max(Zn) as maxZn
+	from bad_samples
+)
+select 
+	* 
+from jura as t1
+inner join cortes as c
+	on t1.Cr > c.MaxCr
+	or t1.Zn > c.MaxZn
+;
+
+
+-- tabela
+with tb_join as (
+	select
+		t1.*,
+		coalesce(t2.status, 'good') as status
+	from jura as t1
+	left join jura_bad as t2
+		on t1.Xloc = t2.Xloc
+		and t1.YLoc = t2.Yloc
+)
+select * from tb_join
+;
+
+-- desafio
+with tb_limites as (
+	select
+		min(t1.Xloc) as XlimW,
+		max(t1.Xloc) as XlimE,
+		min(t1.Yloc) as YlimS,
+		max(t1.Yloc) as YlimN
+		
+	from jura_bad as t1
+	left join jura as t2
+	where t2.Rock in ("Quaternario", "Kimmeridgiano")
+)
+select 
+	* 
+from jura
+inner join tb_limites as tbl
+	on jura.Xloc between tbl.XlimW and tbl.XlimE
+	and jura.Yloc between tbl.YlimS and tbl.YlimN
+;

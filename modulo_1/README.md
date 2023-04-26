@@ -5,7 +5,7 @@
 * [x] `quality.sql`
 * [ ] `teores.sql`
 * [ ] `new_table_I.sql`
-* [ ] `new_table_I.sql`
+* [ ] `new_table_II.sql`
 * [ ] revisar e concluir módulo
 
 ## Introdução
@@ -35,12 +35,12 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
 * **Qualidade de Dados - `quality.sql`**
   * **Filtros e Contagens**
     * Quantos pontos foram amostrados?
-    * Quais os tipos distintos de uso de terra - landuse e litotipo - Rock?
-    * Quantas amostras foram coletadas em floresta?
-    * Quantas amostras são do Argoviano e possuem teor de Zn > 50?
-      * caso esse seja um teor de corte fictício, classifique as amostras com base neste critério
-    * Quantas amostras não possuem dados de teor de Cr?
-    * Quantas não possuem teores de Cr ou de Zn?
+      * Quais os tipos distintos de uso de terra - landuse e litotipo - Rock?
+      * Quantas amostras foram coletadas em floresta?
+      * Quantas amostras são do Argoviano e possuem teor de Zn > 50?
+        * caso esse seja um teor de corte fictício, classifique as amostras com base neste critério
+      * Quantas amostras não possuem dados de teor de Cr?
+      * Quantas não possuem teores de Cr ou de Zn?
   * **Agrupamentos**
     * Quantas registros existem de cada `litotipo`?
     * Qual a combinação de `landuse` e `litotipo` que apresenta mais amostras coletadas?
@@ -51,15 +51,19 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
     * Existe alguma amostra com teor faltante em todos os elementos?
     * Entre cádmio, cobalto e cromio, qual o elemento com o maior número de amostras sem teor?
       * em termos %, o quanto essas amostras representam do total de amostras?
+  * **Join**
+    * Na tabela `jura_bad_samples` existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
+    * Quais os maiores teores de Cr e Zn nas amostras problemáticas?
+    * Quantas amostras do dataset estão acima desses teores?
+      * por exemplo, existem X amostras com teores de Zn acima do teor máximo de Zn nas amostras problemáticas;
+    * Monte uma tabela com todos os dados da tabela original e uma coluna adicional de status.
+    * Desafio: caso as coordernadas das 4 amostras problemáticos do Quaternario e Kimmerridgiano sejam as extremidades de uma área problemática, quantas amostras estariam dentro destes limites?
 
 ---
 
 * **Sobre os Teores - `teores.sql`**
   * Para cada litotipo, quais os maiores, menores teores de Zn? Qual o teor médio de Cr?
-  * Na tabela `jura_bad_samples` existem amostras que não são confiáveis. Quais os `litotipos` dessas amostras?
-  * Quais os maiores teores de cada elemento nas amostras problemáticas?
-  * Quantas amostras do dataset estão acima desses teores, individualmente? E acima de todos?
-    * por exemplo, existem X amostras com teores de Zn acima do teor máximo de Zn nas amostras problemáticas; e Y amostras com todos os teores acima dos maiores teores das amostras
+  
   * Em qual `landuse` ocorre o maior teor médio de Cu?
   * Quais são as 5 amostras do `Argoviano` com maiores teores de Zn?
 
