@@ -26,7 +26,6 @@ select
 	Rock,
 	Landuse,
 	round(avg(Cu), 2) as avg_Cu
-
 from jura
 group by Rock, Landuse
 order by 3 desc
@@ -37,5 +36,3 @@ select
 	*,
 	rank() over (order by Zn desc) as q
 from jura
-;
-select * from jura
