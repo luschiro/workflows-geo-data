@@ -57,21 +57,16 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
     * Quantas amostras do dataset estão acima desses teores?
       * por exemplo, existem X amostras com teores de Zn acima do teor máximo de Zn nas amostras problemáticas;
     * Monte uma tabela com todos os dados da tabela original e uma coluna adicional de status.
-    * Desafio: caso as coordernadas das 4 amostras problemáticos do Quaternario e Kimmerridgiano sejam as extremidades de uma área problemática, quantas amostras estariam dentro destes limites?
 
 ---
 
 * **Sobre os Teores - `teores.sql`**
-  * Para cada litotipo, quais os maiores, menores teores de Zn? Qual o teor médio de Cr?
-  
+  * Para cada litotipo, quais os maiores, menores teores de Zn? E o teor médio de Cr?
   * Em qual `landuse` ocorre o maior teor médio de Cu?
   * Quais são as 5 amostras do `Argoviano` com maiores teores de Zn?
-
-  * Quais seriam os vértices de nossa área caso fossemos delimitá-la em um retângulo?
-  * Caso limitássemos nossa área em um retângulo, quais seriam as coordenadas?
-  * Considerando os quadrantes desse retângulo,qual deles teria a maior concentração média de Cr? E de Cd?
   * Qual o teor médio de Cr das amostras que possuem teor acima do limite Q3?
-  * Considerando a [definição de outliers por IQR](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097), quais amostras apresentam outliers? E qual elemento possui o maior número de amostras anômalas?
+  * Considerando a [definição de outliers por IQR](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097), quais amostras apresentam outliers?
+    * qual elemento possui o maior número de amostras anômalas segundo esse critério?
 
 ---
 

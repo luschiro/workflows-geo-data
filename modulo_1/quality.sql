@@ -215,23 +215,3 @@ with tb_join as (
 )
 select * from tb_join
 ;
-
--- desafio
-with tb_limites as (
-	select
-		min(t1.Xloc) as XlimW,
-		max(t1.Xloc) as XlimE,
-		min(t1.Yloc) as YlimS,
-		max(t1.Yloc) as YlimN
-		
-	from jura_bad as t1
-	left join jura as t2
-	where t2.Rock in ("Quaternario", "Kimmeridgiano")
-)
-select 
-	* 
-from jura
-inner join tb_limites as tbl
-	on jura.Xloc between tbl.XlimW and tbl.XlimE
-	and jura.Yloc between tbl.YlimS and tbl.YlimN
-;
