@@ -4,8 +4,8 @@
 
 * [x] `quality.sql`
 * [ ] `teores.sql`
-* [X] `new_table_I.sql`
-* [ ] `new_table_II.sql`
+* [x] `new_table_I.sql`
+* [x] `new_table_II.sql`
 * [ ] revisar e concluir módulo
 
 ## Introdução
