@@ -4,7 +4,7 @@
 
 * [x] `quality.sql`
 * [ ] `teores.sql`
-* [ ] `new_table_I.sql`
+* [X] `new_table_I.sql`
 * [ ] `new_table_II.sql`
 * [ ] revisar e concluir módulo
 
@@ -71,12 +71,11 @@ Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dad
 ---
 
 * **Novas Tabelas**
-  * **Tabela I -  `new_table_I.sql`** Monte uma visão ou tabela nova a nível de amostra:
+  * **Tabela I -  `new_table_I.sql`** Monte uma visão nova a nível de amostra:
     * sem dados faltantes;
     * nomes de colunas padronizados;
-    * com classificação de quadrante;
-    * com flags para anomalias de cada elemento;
-    * com status de amostra problemática
+    * status de amostra problemática;
+    * com flags para outliers de Zn, segundo o critério de IQR;
   
   * **Tabela II -  `new_table_II.sql`** Monte uma visão ou tabela mais abstrata, a nível de litotipo & landuse.
     * Quais tipos de informações poderíamos agregar?
