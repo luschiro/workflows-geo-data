@@ -1,12 +1,9 @@
 /*
-* Para cada litotipo, quais os maiores, menores teores de Zn e Cr? E o teores médios?
-  * Em qual combinação de `landuse` e `litotipo` ocorre o maior teor médio de Cu?
+	* Para cada litotipo, quais os maiores, menores teores de Zn e Cr? E o teores médios?
   * Quais são as 5 amostras do `Argoviano` com maiores teores de Zn?
-  * Qual o teor médio de Cr das amostras que possuem teor acima do limite Q3?
-  * Considerando a [definição de outliers por IQR](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097), quais amostras apresentam outliers?
-    * qual elemento possui o maior número de amostras anômalas segundo esse critério?
+  * Em qual combinação de `landuse` e `litotipo` ocorre o maior teor médio de Cu?
+	* Qual são os quartis Q1, Q2, Q3 dos teores de Pb?
 */
-
 
 select
   Rock,
@@ -23,16 +20,39 @@ group by Rock
 ;
 
 select
-	Rock,
+	Landuse,
+	Zn
+from jura
+where Rock = "Argoviano"
+order by Zn desc
+limit 5
+;
+
+select
+  Rock,
 	Landuse,
 	round(avg(Cu), 2) as avg_Cu
 from jura
 group by Rock, Landuse
 order by 3 desc
-limit 5
+limit 1
 ;
-	
+
+-- Qual são os quartis Q1, Q2, Q3 dos teories de Pb?
+with quartis as (
+	select
+		Xloc,
+		Yloc,
+		Pb,
+		ntile(4) over(order by Pb asc) as quartilPb
+	from Jura
+	order by Pb desc
+)
+
 select
-	*,
-	rank() over (order by Zn desc) as q
-from jura
+	quartilPb,
+	max(Pb) as vlPb
+from quartis
+group by 1
+order by 1 desc
+;

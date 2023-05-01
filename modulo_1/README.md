@@ -3,7 +3,7 @@
 ## Track
 
 * [x] `quality.sql`
-* [ ] `teores.sql`
+* [x] `teores.sql`
 * [x] `new_table_I.sql`
 * [x] `new_table_II.sql`
 * [ ] revisar e concluir módulo
