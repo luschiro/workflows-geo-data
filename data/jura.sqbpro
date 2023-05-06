@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\lucas\Documents\code\workflows-geoestatistica-data\modulo_1\data\jura.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="2067"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,11:mainWalker_Lake"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">/*
-	* Para cada litotipo, quais os maiores, menores teores de Zn e Cr? E o teores médios? OK
-  * Quais são os `Landuse` das 2 amostras do `Argoviano` com maiores teores de Zn?
-	* Em qual combinação de `landuse` e `litotipo` ocorre o maior teor médio de Cu?
-  * Qual o teor médio de Cr das amostras que possuem teor acima do limite Q3?
-  * Considerando a [definição de outliers por IQR](https://towardsdatascience.com/why-1-5-in-iqr-method-of-outlier-detection-5d07fdc82097), quais amostras apresentam outliers?
-    * qual elemento possui o maior número de amostras anômalas segundo esse critério?
+	* Para cada litotipo, quais os maiores, menores teores de Zn e Cr? E o teores médios?
+  * Quais são as 5 amostras do `Argoviano` com maiores teores de Zn?
+  * Em qual combinação de `landuse` e `litotipo` ocorre o maior teor médio de Cu?
+	* Qual são os quartis Q1, Q2, Q3 dos teores de Pb?
 */
-
 
 select
   Rock,
@@ -28,7 +25,7 @@ select
 from jura
 where Rock = &quot;Argoviano&quot;
 order by Zn desc
-limit 2
+limit 5
 ;
 
 select
@@ -41,9 +38,22 @@ order by 3 desc
 limit 1
 ;
 
+-- Qual são os quartis Q1, Q2, Q3 dos teories de Pb?
+with quartis as (
+	select
+		Xloc,
+		Yloc,
+		Pb,
+		ntile(4) over(order by Pb asc) as quartilPb
+	from Jura
+	order by Pb desc
+)
 
 select
-	*,
-	rank() over (order by Zn desc) as q
-from jura
-;</sql><current_tab id="0"/></tab_sql></sqlb_project>
+	quartilPb,
+	max(Pb) as vlPb
+from quartis
+group by 1
+order by 1 desc
+;
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

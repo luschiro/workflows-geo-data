@@ -1,6 +1,6 @@
 # Workflows de Análise de Dados e Geoestatística
 
-## Introdução e Metodologia
+## Introdução
 
 Este conteúdo introdutório é voltado a pessoas com interesse em aplicações de geoestatística e análise de dados.
 
