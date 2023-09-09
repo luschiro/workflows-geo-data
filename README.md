@@ -14,10 +14,9 @@ Serão realizados workflows para resolução de **problemas geológicos e geoest
 
 * **Módulo 0 | Introdução e Setup**
 * **Módulo 1 | Qualidade de Dados e Validação com SQL**
-* **Módulo 2 | Análise Exploratória de Dados com Python**
-* **Módulo 3 | Visualização de dados com Python**
-* **Módulo 4 | Criando modelos lineares com Python**
-* **Módulo 5 | Modelos Geoestatísticos**
+* **Módulo 2 | Análise Exploratória e Visulização de Dados com Python**
+* **Módulo 3 | Criando modelos lineares com Python**
+* **Módulo 4 | Modelos Geoestatísticos**
 
 ## Recursos e Ferramentas
 
