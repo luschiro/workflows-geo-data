@@ -21,14 +21,6 @@ Serão realizados workflows para resolução de **problemas geológicos e geoest
 
 ## Recursos e Ferramentas
 
-* Conda e ambientes virtuais
-  * [documentação oficial](https://docs.conda.io/en/latest/miniconda.html)
-  * [post tutorial 1](https://adrianovieira.gitlab.io/posts/conda/)
-  * [post tutorial 2](https://www.monolitonimbus.com.br/conda-e-ambientes-virtuais/)
-
-* Git e Github
-  * [livro sobre git (PT)](https://git-scm.com/book/pt-br/v2)
-
 * Geoestatística
   * [AI_GEOSTATS](https://wiki.52north.org/AI_GEOSTATS/WebHome)
   * [geostatsguy](https://github.com/GeostatsGuy)
@@ -41,5 +33,14 @@ Serão realizados workflows para resolução de **problemas geológicos e geoest
 
 * Python
   * [Site oficial](https://www.python.org/)
-  * [Referência python 2](a)
-  * [Referência python 3](a)
+  * [PEP8 - estilo/boas práticas](https://peps.python.org/pep-0008/)
+  * [Playlist Python - EN](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+  * [referências Téo Me Why](https://github.com/TeoMeWhy/teomerefs)
+
+* Conda e ambientes virtuais
+  * [documentação oficial](https://docs.conda.io/en/latest/miniconda.html)
+  * [post tutorial 1](https://adrianovieira.gitlab.io/posts/conda/)
+  * [post tutorial 2](https://www.monolitonimbus.com.br/conda-e-ambientes-virtuais/)
+
+* Git e Github
+  * [livro sobre git (PT)](https://git-scm.com/book/pt-br/v2)
