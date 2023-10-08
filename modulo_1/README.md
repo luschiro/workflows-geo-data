@@ -10,11 +10,11 @@
 
 ## Introdução
 
-Com nossos dados "raw" permanecidos em uma database, vamos começar nossas análises. Uma vez em uma database SQlite, pode utilizar o DB Browser, uma ferramenta simples e bem útil, onde poderemos validar dados, análises e conferir o resultado de nossas queries.
+Com nossos dados "raw" permanecidos em uma tabela, vamos começar nossas análises. Uma vez em uma database SQlite, pode utilizar o DB Browser, uma ferramenta simples e bem útil, onde poderemos validar dados, análises e conferir o resultado de nossas queries.
 
 ## SQL
 
-O SQL (structured query language) é uma linguagem de consulta antiga (e não de programação..), mas muito útil e bastante usada no meio dos dados.
+O SQL (structured query language) é uma linguagem de consulta antiga (e não de programação..), mas muito útil e bastante.
 
 Geralmente, em operações do dia a dia, conseguimos utilizar ferramentas de planilha (excel, sheets) para resolvermos nossos problemas. Quando existe um volume muito grande dados, utilizar tais ferramentas pode ser um pouco complicado.
 
@@ -22,13 +22,13 @@ Deste modo, vamos realizar algumas análises utilizando SQL, simulando um contex
 
 ## DB Browser
 
-O DB Browser é uma ferrmanta visual e de alta qualidade para administração de databases SQlite. Segundo o [site oficial](https://sqlitebrowser.org/):
+O DB Browser é uma ótima ferramenta visual para administração de databases SQlite. Segundo o [site oficial](https://sqlitebrowser.org/):
 
 >DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite. DB4S is for users and developers who want to create, search, and edit databases.
 
 ## Exercícios
 
-Guia para colocarmos em prática o SQL, tanto para qualidade evalidação de dados (A-X), como já em um contexto de análise de teores mais específicas.
+Exercício para colocarmos em prática o SQL, tanto para qualidade e validação de dados (A-X), como em contexto de análise.
 
 ---
 

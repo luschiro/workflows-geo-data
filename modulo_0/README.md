@@ -2,6 +2,8 @@
 
 ## Apresentação e Objetivos
 
+
+
 ## Ambiente de Desenvolvimeto e Stack
   
 * [VS Code](https://code.visualstudio.com/) - editor de código
@@ -21,6 +23,9 @@ Serão utilizados os seguintes datasets:
 
 ## Criando um banco de dados SQLite no DB Browser
 
-### Tabelas
-
 ### Editor SQL
+
+### Tabela Novas
+
+Neste módulo, iremos criar algumas tabelas:
+  *
