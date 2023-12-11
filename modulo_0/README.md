@@ -2,9 +2,17 @@
 
 ## Apresentação e Objetivos
 
+Esta trilha foi feita para ajudar pessoas iniciantes em análise de dados e em geoestatística. Ela foi feita como parte do meu próprio estudo pois, como dizem, uma das das melhores formas de aprender é explicar um conceito para outra pessoa.
 
+Assim sendo, temos como objetivos:
 
-## Ambiente de Desenvolvimeto e Stack
+* organizar um ambiente de desenvolvimento
+* fazer queries SQL para validar e transformar nossos dados
+* realizar uma análise exploratória e visualizar os dados com Python
+* aplicar conceitos de machine learning e criar modelos
+* aprender os ceonceitos de **geoestatística** em um ambiente de dados
+
+## Ambiente de Desenvolvimeto
   
 * [VS Code](https://code.visualstudio.com/) - editor de código
 * [miniconda](https://docs.conda.io/en/latest/miniconda.html) - organizador de ambientes virtuais
@@ -23,9 +31,10 @@ Serão utilizados os seguintes datasets:
 
 ## Criando um banco de dados SQLite no DB Browser
 
+* importando dados de um arquivo .csv
+* verificando tabela
+
 ### Editor SQL
 
-### Tabela Novas
-
-Neste módulo, iremos criar algumas tabelas:
-  *
+* fazendo nossa primeira consulta
+* SQL básico
