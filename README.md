@@ -1,5 +1,16 @@
 # Workflows de Análise de Dados e Geoestatística
 
+## Evolução do Projeto
+
+- [ ] Módulo 0
+  - [ ] gravar vídeo com criação de bance de dados e tabelas no DBBrowser
+  - [ ] graver vídeo com primeiras consultas SQL
+
+- [ ] Módulo 1
+  - [ ] gravar vídeo respostas das preguntas propostas
+
+---
+
 ## Introdução
 
 Este conteúdo é voltado a pessoas com interesse em aplicações de geoestatística e análise de dados.
@@ -7,6 +18,7 @@ Este conteúdo é voltado a pessoas com interesse em aplicações de geoestatís
 Serão realizados workflows para resolução de **problemas geológicos e geoestatísticos** introdutórios, aplicados principalmente à mineração e à estimativa de recursos minerais, seguindo dois passos principais:
 
 * **estruturação e validação de dados com SQL**
+
   * criação de um banco de dados e análises com queries SQL; checagem de qualidade de dados, criação de tabelas mais limpas e mais abstratas, anáise de dados inicial, etc;
 
 * **worklows com Python**
@@ -16,7 +28,7 @@ Serão realizados workflows para resolução de **problemas geológicos e geoest
 
 | Módulo | Tema | Link |
 | --     | --   | -    |
-0 | Introdução e Setup                                     | link0
+0 | Introdução e Setup                                     | link 0
 1 | Qualidade de Dados e Validação com SQL                 | link1
 2 | Análise Exploratória e Visulização de Dados com Python | link2
 3 | Criando modelos lineares com Python                    | link3
