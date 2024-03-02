@@ -19,10 +19,10 @@ Serão realizados workflows para resolução de **problemas geológicos e geoest
 
 | Módulo | Tema | Link |
 | --     | --   | -    |
-0 | Introdução e Setup                                     | link-0
-1 | Qualidade de Dados e Validação com SQL                 | link-1
-2 | Análise Exploratória e Visulização de Dados com Python | link-2
-3 | Criando modelos lineares com Python                    | link-3
+0 | Introdução e Setup                                     | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_0)
+1 | Qualidade de Dados e Validação com SQL                 | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_1)
+2 | Análise Exploratória e Visulização de Dados com Python | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_2)
+3 | Criando modelos lineares com Python                    | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_3)
 
 ## Recursos e Ferramentas
 
