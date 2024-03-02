@@ -13,16 +13,16 @@ Serão realizados workflows para resolução de **problemas geológicos e geoest
   * criação de um banco de dados e análises com queries SQL; checagem de qualidade de dados, criação de tabelas mais limpas e mais abstratas, anáise de dados inicial, etc;
 
 * **worklows com Python**
-  * gestão do banco de dados e execução de queries; análise exploratória de dados, criação de com visualização de dados; criação de modelos estatísticos mais específicos.
+  * gestão do banco de dados e execução de queries; análise exploratória de dados, criação de com visualização de dados; criação de modelos lineares.
 
 ## Organização do Repo
 
 | Módulo | Tema | Link |
 | --     | --   | -    |
-0 | Introdução e Setup                                     | link0
-1 | Qualidade de Dados e Validação com SQL                 | link1
-2 | Análise Exploratória e Visulização de Dados com Python | link2
-3 | Criando modelos lineares com Python                    | link3
+0 | Introdução e Setup                                     | link-0
+1 | Qualidade de Dados e Validação com SQL                 | link-1
+2 | Análise Exploratória e Visulização de Dados com Python | link-2
+3 | Criando modelos lineares com Python                    | link-3
 
 ## Recursos e Ferramentas
 
