@@ -1,22 +1,14 @@
 # Módulo 1 | Qualidade de dados e validação inical
 
-## Track
-
-* [x] `quality.sql`
-* [x] `teores.sql`
-* [x] `new_table_I.sql`
-* [x] `new_table_II.sql`
-* [ ] revisar e concluir módulo
-
 ## Introdução
 
 Com nossos dados "raw" permanecidos em uma tabela, vamos começar nossas análises. Uma vez em uma database SQlite, pode utilizar o DB Browser, uma ferramenta simples e bem útil, onde poderemos validar dados, análises e conferir o resultado de nossas queries.
 
 ## SQL
 
-O SQL (structured query language) é uma linguagem de consulta antiga (e não de programação..), mas muito útil e bastante.
+O SQL (structured query language) é uma linguagem de consulta antiga (e não de programação..), mas muito útil.
 
-Geralmente, em operações do dia a dia, conseguimos utilizar ferramentas de planilha (excel, sheets) para resolvermos nossos problemas. Quando existe um volume muito grande dados, utilizar tais ferramentas pode ser um pouco complicado.
+Geralmente, em operações do dia a dia, utilizamos ferramentas de planilha (excel, sheets) para resolvermos problemas. Quando existe um volume muito grande dados, utilizar tais ferramentas pode ser um pouco complicado.
 
 Deste modo, vamos realizar algumas análises utilizando SQL, simulando um contexto fora das ferramentas de planilha. Para praticar, iremos resolver algumas questões..
 
@@ -25,6 +17,12 @@ Deste modo, vamos realizar algumas análises utilizando SQL, simulando um contex
 O DB Browser é uma ótima ferramenta visual para administração de databases SQlite. Segundo o [site oficial](https://sqlitebrowser.org/):
 
 >DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite. DB4S is for users and developers who want to create, search, and edit databases.
+
+Recursos para criação de databases e tabelas SQLite no DB Browser:
+
+* [vídeo 1](https://www.youtube.com/watch?v=4_p0eBgkZuk&ab_channel=CobraDevCursos)
+* [playlist](https://www.youtube.com/playlist?list=PLTYLKz3zyxKonrLifrisb02uIjIIVvGnZ)
+* [playlist(ENG)](https://www.youtube.com/watch?v=b0syBVINQiI&list=PLU70qqWW4frGdwNh4czgTrCrHvPhyt2aI&ab_channel=MainlyWebStuff)
 
 ## Exercícios
 
