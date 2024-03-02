@@ -1,27 +1,27 @@
 # Workflows de Análise de Dados para Geologia
 
----
-
 ## Introdução
 
-Este conteúdo é voltado a pessoas com interesse em aplicações de geoestatística e análise de dados.
-
-Serão realizados workflows para resolução de **problemas geológicos e geoestatísticos** introdutórios, aplicados principalmente à mineração e à estimativa de recursos minerais, seguindo dois passos principais:
+Este conteúdo é voltado a pessoas com interesse em análise de dados. Serão realizados workflows e anpalises para resolução de introdutórias, utilizando dados geológicos, seguindo dois passos principais:
 
 * **estruturação e validação de dados com SQL**
 
   * criação de um banco de dados e análises com queries SQL; checagem de qualidade de dados, criação de tabelas mais limpas e mais abstratas, anáise de dados inicial, etc;
-
-* **worklows com Python**
-  * gestão do banco de dados e execução de queries; análise exploratória de dados, criação de com visualização de dados; criação de modelos lineares.
+    * stack: *SQL*, *DB Browser SQLite*
+* **análise epxloratória com Python**
+  * gestão do banco de dados e execução de queries; análise exploratória de dados, criação de com visualização de dados;
+    * stack: *Python*, *libs: pandas, seaborn, matplotlib*
+* **modelos lineares**
+  * criação de modelos lineares de regressão utilizando valores de teor.
+    * stack: *Python*, *libs: pandas, seaborn, matplotlib, sklearn*
 
 ## Organização do Repo
 
 | Módulo | Tema | Link |
 | --     | --   | -    |
-1 | Qualidade de Dados e Validação com SQL                  | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_1)
-2 | Análise Exploratória e Visualização de Dados com Python | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_2)
-3 | Criando modelos lineares com Python                     | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_3)
+| 1 | Qualidade de Dados e Validação com SQL                  | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_1) |
+| 2 | Análise Exploratória e Visualização de Dados com Python | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_2) |
+| 3 | Criando modelos lineares com Python                     | [link](https://github.com/luschiro/workflows-geo-data/tree/main/modulo_3) |
 
 ## Recursos e Ferramentas
 
