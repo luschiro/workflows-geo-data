@@ -2,13 +2,13 @@
 
 ## Introdução
 
-Este conteúdo é voltado a pessoas com interesse em análise de dados. Serão realizados workflows e anpalises para resolução de introdutórias, utilizando dados geológicos, seguindo dois passos principais:
+Este conteúdo é voltado a pessoas com interesse em análise de dados. Serão realizados workflows e análises para resolução de problemas introdutórios, utilizando dados geológicos, seguindo dois passos principais:
 
 * **estruturação e validação de dados com SQL**
 
   * criação de um banco de dados e análises com queries SQL; checagem de qualidade de dados, criação de tabelas mais limpas e mais abstratas, anáise de dados inicial, etc;
     * stack: *SQL*, *DB Browser SQLite*
-* **análise epxloratória com Python**
+* **análise exploratória com Python**
   * gestão do banco de dados e execução de queries; análise exploratória de dados, criação de com visualização de dados;
     * stack: *Python*, *libs: pandas, seaborn, matplotlib*
 * **modelos lineares**
