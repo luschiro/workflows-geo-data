@@ -6,14 +6,16 @@ Este conteúdo é voltado a pessoas com interesse em análise de dados. Serão r
 
 * **estruturação e validação de dados com SQL**
 
-  * criação de um banco de dados e análises com queries SQL; checagem de qualidade de dados, criação de tabelas mais limpas e mais abstratas, anáise de dados inicial, etc;
-    * stack: *SQL*, *DB Browser SQLite*
+  * criação de um banco de dados e análises com queries SQL; check de qualidade de dados; criação de tabelas tratadas; análise de dados inicial
+    * *SQL*, *DB Browser SQLite*
+
 * **análise exploratória com Python**
-  * gestão do banco de dados e execução de queries; análise exploratória de dados, criação de com visualização de dados;
-    * stack: *Python*, *libs: pandas, seaborn, matplotlib*
+  * gestão do banco de dados e execução de queries; análise exploratória de dados; criação de com visualização de dados
+    * *Python*, *libs: pandas, seaborn, matplotlib*
+
 * **modelos lineares**
-  * criação de modelos lineares de regressão utilizando valores de teor.
-    * stack: *Python*, *libs: pandas, seaborn, matplotlib, sklearn*
+  * criação de modelos lineares de regressão utilizando teores
+    * *Python*, *libs: pandas, seaborn, matplotlib, sklearn*
 
 ## Organização do Repo
 
@@ -49,7 +51,7 @@ Este conteúdo é voltado a pessoas com interesse em análise de dados. Serão r
   * [Stanford Geostatistical Modeling Software - SGeMS](https://sgems.sourceforge.net/)
   * [GeoStats.jl](https://github.com/JuliaEarth/GeoStats.j)
 
-## Ambiente de Desenvolvimeto
+## Ambiente de Desenvolvimento
   
 * [VS Code](https://code.visualstudio.com/) - editor de código
 * [miniconda](https://docs.conda.io/en/latest/miniconda.html) - organizador de ambientes virtuais
