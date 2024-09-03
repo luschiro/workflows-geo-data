@@ -40,6 +40,7 @@ where cadmium is not null
 			and Zn is not null
 
 ),
+
 --select * from t order by vlZinc desc
 
 quantiles as (
