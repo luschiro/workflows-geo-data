@@ -49,10 +49,10 @@ with quartis as (
 	order by Pb desc
 )
 
-select
+SELECT
 	quartilPb,
-	max(Pb) as vlPb
-from quartis
-group by 1
-order by 1 desc
+	MAX(Pb) as vlPb
+FROM quartis
+GROUP BY 1
+ORDER BY 1 DESC
 ;

@@ -3,40 +3,41 @@
     * Quais tipos de informações poderíamos agregar?
 */
 
-select 
+SELECT 
 	descUnit,
-	count(*) as qtSamples,
+	COUNT(*) as qtSamples,
 	
 	-- Cd
-	min(vlCadmium) as vlMinCadmium,
-	max(vlCadmium) as vlMaxCadmium,
-	round(avg(vlCadmium), 3) as vlAvgCadmium,
+	MIN(vlCadmium) as vlMinCadmium,
+	MAX(vlCadmium) as vlMaxCadmium,
+	ROUND(AVG(vlCadmium), 3) as vlAvgCadmium,
 	
 	-- Co
-	min(vlCobalt) as vlMinCobalt,
-	max(vlCobalt) as vlMaxCobalt,
-	round(avg(vlCobalt), 3) as vlAvgCobalt,
+	MIN(vlCobalt) as vlMinCobalt,
+	MAX(vlCobalt) as vlMaxCobalt,
+	ROUND(AVG(vlCobalt), 3) as vlAvgCobalt,
 	
 	-- Cr
-	min(vlChromium) as vlMinChromium,
-	max(vlChromium) as vlMaxChromium,
-	round(avg(vlChromium), 3) as vlAvgChromium,
+	MIN(vlChromium) as vlMinChromium,
+	MAX(vlChromium) as vlMaxChromium,
+	ROUND(avg(vlChromium), 3) as vlAvgChromium,
 	
 	-- Ni
-	min(vlNickel) as vlMinNickel,
-	max(vlNickel) as vlMaxNickel,
-	round(avg(vlNickel), 3) as vlAvgNickel,
+	MIN(vlNickel) as vlMinNickel,
+	MAX(vlNickel) as vlMaxNickel,
+	ROUND(AVG(vlNickel), 3) as vlAvgNickel,
 	
 	-- Pb
-	min(vlLead) as vlMinLead,
-	max(vlLead) as vlMaxLead,
-	round(avg(vlLead), 3) as vlAvgLead,
+	MIN(vlLead) as vlMinLead,
+	MAX(vlLead) as vlMaxLead,
+	ROUND(AVG(vlLead), 3) as vlAvgLead,
 	
 	-- Zn
-	min(vlZinc) as vlMinZinc,
-	max(vlZinc) as vlMaxZinc,
-	round(avg(vlZinc), 3) as vlAvgZinc
+	MIN(vlZinc) as vlMinZinc,
+	MAX(vlZinc) as vlMaxZinc,
+	ROUND(AVG(vlZinc), 3) as vlAvgZinc
 
-from silver_jura
-group by 1
-order by 1
+FROM silver_jura
+GROUP BY descUnit
+ORDER BY descUnit
+;
