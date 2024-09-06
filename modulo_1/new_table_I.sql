@@ -12,7 +12,9 @@ with t as (
 		t1.Yloc as vlLocY,
 		lower(t1.Landuse) as descLanduse,
 		lower(Rock) as descUnit,
-		cadmium as vlCadmium,
+		
+    -- teores
+    cadmium as vlCadmium,
 		cobalt as vlCobalt,
 		Cr  as vlChromium,
 		nickel as vlNickel,
@@ -20,6 +22,7 @@ with t as (
 		Zn as vlZinc,
 		t2.status,
 		
+    -- percent_rank
 		round(percent_rank() over(order by cadmium), 2) as rankCadmium,
 		round(percent_rank() over(order by cobalt), 2) as rankCobalt,
 		round(percent_rank() over(order by Cr), 2) as rankChromium,
