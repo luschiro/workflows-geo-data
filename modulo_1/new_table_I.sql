@@ -41,7 +41,7 @@ where cadmium is not null
 
 ),
 
---select * from t order by vlZinc desc
+-- select * from t order by vlZinc desc
 
 quantiles as (
 	select

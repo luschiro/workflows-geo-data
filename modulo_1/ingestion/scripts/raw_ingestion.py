@@ -10,10 +10,9 @@ from utils import get_directories, connect_db
 
 def bad_samples(raw_dataset):
     # function that takes a dataframe with X and Y and randomly creates a syntetic
-    # table with problematic samples
+    # table with problematic\ samples
     
-    df_bad_samples = raw_dataset.iloc[:,[1,2]] \
-                    .sample(frac=0.02, replace= False)
+    df_bad_samples = raw_dataset.iloc[:,[1,2]].sample(frac=0.02, replace= False)
     df_bad_samples[['status']] = 'good'
     
     return df_bad_samples
@@ -46,7 +45,6 @@ def main():
         # creating tables
         df.to_sql(str(file_name), con, if_exists='replace', index=True)
         df_bad.to_sql(str(file_name)+'_bad_samples', con, if_exists='replace', index=True)
-
 
 if __name__ == "__main__":
     main()
