@@ -22,7 +22,7 @@ with t as (
 		Zn as vlZinc,
 		t2.status,
 		
-    -- percent_rank
+    -- percent_rank (posição % em relação à partição)
 		round(percent_rank() over(order by cadmium), 2) as rankCadmium,
 		round(percent_rank() over(order by cobalt), 2) as rankCobalt,
 		round(percent_rank() over(order by Cr), 2) as rankChromium,
@@ -31,10 +31,12 @@ with t as (
 		round(percent_rank() over(order by Zn), 2) as rankZn
 from jura as t1
 
+-- tabela de amostras ruins
 left join jura_bad as t2
 	on t1.Xloc = t2.Xloc
 	and t1.Yloc = t2.Yloc
 
+-- filtro de registros com todos os teores
 where cadmium is not null
 			and cobalt is not null
 			and Cr is not null

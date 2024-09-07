@@ -10,6 +10,8 @@ def main():
     # getting paths
     CURRENT_DIR, QUERY_DIR, DATA_DIR = get_directories()
 
+    print("data dir:", DATA_DIR)
+
     # setting up args
     parser = argparse.ArgumentParser()
     parser.add_argument('--database')
